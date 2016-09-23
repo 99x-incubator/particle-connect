@@ -1,2 +1,2 @@
 # particle-connect
-.net connector for particle cloud
+ HttpClient for Particle Photon. 
