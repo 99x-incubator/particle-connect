@@ -5,7 +5,6 @@
 * Declaring the variables.
 */
 unsigned int nextTime = 0;    // Next time to contact the server
-int count = 0 ;  // Count of how many times loop went through
 HttpClient http;
 http_request_t request;
 http_response_t response;
