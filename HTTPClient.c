@@ -4,13 +4,12 @@
 /**
 * Declaring the variables.
 */
-unsigned int nextTime = 0;    // Next time to contact the server
 HttpClient http;
 http_request_t request;
 http_response_t response;
 http_header_t headers[] = {
-                          { "Content-type", "application/x-www-form-urlencoded" },
-                          { NULL, NULL } // NOTE: Always terminate headers will NULL
+    { "Content-type", "application/x-www-form-urlencoded" },
+    { NULL, NULL } // NOTE: Always terminate headers will NULL
 };
 
 void setup() {
@@ -21,7 +20,6 @@ void setup() {
 void loop() {
     Serial.println();
     Serial.println("Application>\tStart of Loop.");
-
 }
 
 void getRequest(){
@@ -47,5 +45,4 @@ void postRequest(){
     Serial.println(response.status);
     Serial.print("HTTP Response Body: ");
     Serial.println(response.body);
-
 }
