@@ -1,8 +1,36 @@
-# particle-connect
+# Particle-Connect
+
 [![Join the chat at https://gitter.im//particle-connect/Lobby](https://badges.gitter.im/particle-connect/Lobby.svg)](https://gitter.im/particle-connect/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-http connector for particle photon (direct connection)
 
+POST and GET requests through particle photon  without using Particle Cloud functions.
+
+### Guide
+- Connect Particle photon to the cloud.
+- Open Particle [WebIDE](https://build.particle.io/)
+- Paste the Particle-Connect code
+
+
+```sh
+    request.hostname = "yourhost.com";
+    request.port = 80;
+    request.path = "/yourc/path";
+```
+
+ - Replace hostname , port , path with yours server details.
+
+```sh
+     request.body = "json : sample" ;
+```
+ - Replace json:sample with  Variable values ,  that needed to be transmitted to the server.
+ Eg :
+```sh
+     String str =  "temperature: " + temperatureReading ;
+     request.body = str ;
+```
+
+### Libraries
+ - HTTPClient for SparkCore.
 
 ## Contributing
 
