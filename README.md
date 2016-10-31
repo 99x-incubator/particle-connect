@@ -9,7 +9,12 @@ POST and GET requests through particle photon  without using Particle Cloud func
 - Connect Particle photon to the cloud.
 - Open Particle [WebIDE](https://build.particle.io/)
 - Paste the Particle-Connect code
-
+- if you face a error with importing the libraries delete import statements 
+  ```sh 
+  #include "application.h"
+  #include "HttpClient/HttpClient.h"
+  ```
+- include libraries by Libraries >> {Library Name} >> include in App
 
 ```sh
     request.hostname = "yourhost.com";
